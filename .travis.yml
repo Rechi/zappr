@@ -25,12 +25,7 @@ script:
   - npm test
   - npm run test-karma
 env:
-  - CXX=g++-4.8 KARMA_BROWSER=Firefox
+  - KARMA_BROWSER=Firefox
 addons:
   postgresql: "9.4"
   firefox: "latest-beta"
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-4.8
